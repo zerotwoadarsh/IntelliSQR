@@ -1,91 +1,100 @@
+
+# Full-Stack Authentication System
+
 This is a full-stack authentication system built using React, TypeScript, Node.js, Express, Prisma, and MongoDB. It includes user registration and login with password hashing, salting, and JWT authentication.
 
-Features
 
-User registration with hashed and salted passwords
+## Features
 
-Secure login with JWT authentication
+- User registration with hashed and salted passwords
 
-Frontend validation using react-hook-form and zod
+- Secure login with JWT authentication
 
-Backend validation with zod
+- Frontend validation using react-hook-form and zod
 
-MongoDB integration using Prisma
+- Backend validation with zod
 
-Tech Stack
+- MongoDB integration using Prisma
 
-Frontend
 
-React (Next.js) – For building the user interface
+## Tech Stack
 
-TypeScript – Type safety
+**Frontend:** 
 
-React Hook Form – Form handling
 
-Axios – API requests
+- React – For building the user interface
 
-Tailwind CSS – Styling
+- TypeScript – Type safety
 
-Zod – Form validation
+- React Hook Form – Form handling
 
-Backend
+- Axios – API requests
 
-Node.js & Express.js – Backend server
+- Tailwind CSS – Styling
 
-TypeScript – Type safety
+- Zod – Form validation
 
-Prisma ORM – Database management
+**Backend:** 
 
-MongoDB – Database
+- Node.js & Express.js – Backend server
 
-Bcrypt.js – Password hashing and salting
+- TypeScript – Type safety
 
-JWT – Authentication
+- Prisma ORM – Database management
 
-Zod – Input validation
+- MongoDB – Database
 
-Prerequisites
+- Bcrypt.js – Password hashing and salting
 
-Ensure you have the following installed:
+- JWT – Authentication
 
-Node.js (v16+)
+- Zod – Input validation
 
-MongoDB (local or Atlas instance)
 
-npm or yarn
-
-Installation
+## Installation
 
 Clone the Repository
 
-https://github.com/zerotwoadarsh/IntelliSQR.git
-
+```bash
+  https://github.com/zerotwoadarsh/IntelliSQR.git
+  cd IntelliSQR
+```
 Backend Setup
 
-cd backend
-npm install
-
-Configure Environment Variables
-
-Create a .env file in the backend folder:
-
-PORT=5174
-JWT_SECRET=your_secret_key
-DATABASE_URL=mongodb+srv://your_mongodb_url
+```bash
+  cd backend
+  npm install
+```
 
 Run Migrations (Prisma)
-
-npx prisma generate
+```bash
+  npx prisma generate
+```
 
 Start Backend Server
-
-npm run dev
+```bash
+  npm run dev
+```
 
 Frontend Setup
 
-cd ../frontend
-npm install
+```bash
+  cd ../frontend
+  npm install
+```
 
 Start Frontend Server
 
-npm run dev
+```bash
+  npm run dev
+```
+## Environment Variables
+
+To run this project, you will need to add the following environment variables to your .env file
+
+`PORT=5174`
+
+`JWT_SECRET=your_secret_key`
+
+`DATABASE_URL=mongodb+srv://your_mongodb_url`
+
